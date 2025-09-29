@@ -1,25 +1,28 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-    // realizando leitura
-        //No java, é necessário criar um objeto Scanner para ler as linhas, do C# que usa console.readLine();
-        Scanner scan = new Scanner(System.in);
+    // comando de loop, estruturas de repetição.
 
-        int n1, n2, res = 0;
-        String nome = "";
+        int i = 0;
 
-        System.out.println("Digite seu nome: ");
-        nome = scan.nextLine();
+        //while
+        while(i<8){
+            System.out.printf("Contando com while: %d\n", i);
+            i++;
+        }
+        // do while - primeiro ele faz e depois testa.
+        System.out.println("Começando a contagem!");
+        do{
+            System.out.printf("%d\n", i);
+        }while(i<10);
 
-        System.out.println("Digite um numeral: ");
-        n1 = scan.nextInt();
+        //for (para), a configuração vem dentro da primeira linha.
+        for(int cont=0; cont<10; cont++){
+            System.out.printf("Contando com for: %d\n", cont);
+        }
 
-        System.out.println("Digite outro numeral: ");
-        n2 = scan.nextInt();
 
-        res = n1 + n2;
 
-        System.out.printf("%s, o resultado da soma dos numerais é: %d ",  nome,  res);
 
 
     }}
